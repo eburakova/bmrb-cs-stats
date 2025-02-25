@@ -3,7 +3,7 @@ import plotly.graph_objects as go
 import plotly.express as px
 
 
-def make_chart(df, color_dict, leg_title=''):
+def make_chart(df, color_dict, x_range=[250, 0], leg_title='', ):
     fig = go.Figure()
 
     y_center = 0
@@ -69,7 +69,7 @@ def make_chart(df, color_dict, leg_title=''):
     fig.update_layout(
         template='plotly_white',
         paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)',
-        xaxis_range=[250, 0], 
+        xaxis_range=x_range, 
         yaxis_range=[y_tick_positions[-1]+2, y_tick_positions[0]-0.7],
         width=700,
         height=1000,

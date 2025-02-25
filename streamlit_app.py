@@ -1,6 +1,6 @@
 import streamlit as st
 from src.make_charts import make_chart
-from src import colors
+from src import colors, constants
 import pandas as pd
 
 st.title("Bio NMR chemical shifts statistics")
@@ -37,7 +37,9 @@ color_dict = colors_nuclei[nucleus]
 
 df_nucl = df.loc[df['atom_id'].isin(color_dict.keys()), ['comp_id', 'atom_id', 'lower', 'higher']]
 
-fig = make_chart(df_nucl, color_dict, leg_title=nucleus)
+fig = make_chart(df_nucl, color_dict, 
+                 leg_title=nucleus,
+                 x_range=constants.ppm_ranges[nucleus])
 
 st.plotly_chart(fig)
 
