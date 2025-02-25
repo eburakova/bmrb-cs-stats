@@ -1,8 +1,9 @@
-# 🎈 Blank app template
+# Protein NMR chemical shifts
 
-A simple Streamlit app template for you to modify!
+Whether you are setting up NMR experiments, processing or assigning bio NMR spectra, 
+it is very helpful to know what signals to expect. With this app you always have the chemical shift statistics at hand!
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://cuddly-guacamole-jx9pvrpwqqq25wpr-8501.app.github.dev/)
 
 ### How to run it on your own machine
 
